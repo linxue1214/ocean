@@ -1,0 +1,299 @@
+.wrap{margin: 0px auto;
+	width:100%;
+	position: relative 
+}
+.wrap .box{width:200px;
+	height:20px;
+	position: relative ;
+	margin:auto;
+}
+.wrap .box img{
+	width:200px;
+	height:200px;
+	position: absolute ;
+	top:0px;
+	left:0px;
+	opacity: 0}
+.wrap div .text{
+	opacity:1;
+}
+
+/*link*/
+.wrap .link{
+	position:relative
+	;width: 70%;
+	height: 100px; 
+}
+.wrap .link h5{
+	position: absolute ;
+	top:200px;
+	left:00px;
+	opacity: 0;
+	text-align:center;
+}
+
+.wrap div .link1{opacity:1;}
+
+.pic_show{
+		width: 600px;
+		height: 400px;
+		margin: auto;
+		
+}
+.wrap .out{
+		
+		width:25%;
+		height: 400px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+}
+.wrap .in{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0px;
+		top:0px;
+}
+.wrap .in img{
+	 
+		margin: 0px;
+		display: block;
+
+}
+.icon {
+	width: 5.5em;
+	height: 5.5em;
+	vertical-align: -1em;
+	fill: currentColor;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+/* news */
+container section .news .pic_show .out{
+	border: 1px solid black;
+	width:25%;
+	height: 400px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.news.pic_show .out .in{
+	border: 1px solid black;
+	width: 100%;
+	height: 200%;
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+
+
+
+figure.effect-bubba {
+	background: #9e5406;
+	display: inline-block;
+}
+
+figure.effect-bubba img {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+	padding-top: 30%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+.grid {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	list-style: none;
+	
+}
+@media all and (max-width:900px){
+	#service svg{
+		margin:auto ;
+	}
+}
+@media all and (max-width:500px){
+	#service svg{
+		position: relative;
+		left:100px;
+	
+	}
+}
+
+/* mengban */
+.grid figure {
+	position: relative;
+	left: 8%;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: 10px;
+	width: 40%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 200;
+}
+
+.grid figure h2 span {
+	font-weight: 200;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.newsbtn{
+	width:40%;
+	height:auto;
+	border:1px solid black;
+}
+.newsbtn ul{
+	border:1px solid black;
+	width:450px;
+	height:50px;
+	display:inline-block;
+	list-style-type:none;
+
+}
+.newsbtn ul li{
+	border:1px solid black;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:70px;
+	position:relative;
+	left:100px;
+
+}
+footer{
+	background-color:pink;
+	width:100%;
+	height:50px;
+}
+	
+footer p{
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	height:50px;
+	line-height:50px;
+	margin-top:20px;
+}
